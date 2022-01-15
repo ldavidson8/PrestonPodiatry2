@@ -8,8 +8,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '',
+        primary: '#46a758',
         secondary: '',
+      },
+      minHeight: {
+        '25%': '25vh',
+        '50%': '50vh',
+        '75%': '75vh',
+      },
+      maxHeight: {
+        '25%': '25vh',
+        '50%': '50vh',
+        '75%': '75vh',
       },
     },
   },
