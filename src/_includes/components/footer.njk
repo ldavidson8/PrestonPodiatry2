@@ -1,9 +1,9 @@
 <footer class="w-full relative bottom-0 left-0 right-0 text-white">
   <section
-    class="py-8 px-16 md:px-28 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 text-center md:text-left gap-6 bg-zinc-900"
+    class="py-8 px-4 md:px-28 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 text-center md:text-left gap-6 bg-zinc-900"
   >
     <div>
-      <h2 class="text-lg font-medium tracking-wider">Opening Hours</h2>
+      <h2 class="text-lg font-medium tracking-wider mb-2">Opening Hours</h2>
       <div id="open-hours"></div>
     </div>
     <div>
@@ -20,7 +20,7 @@
       <ul class="flex flex-col">
         {% for item in navigation %}
           <a
-          class="{{ 'font-semibold underline text-primary' if page.url == item.route }}"
+          class="{{ 'font-semibold underline text-primary' if page.url == item.route }} text-lg mt-4"
           href="{{ item.route }}"
         >
             {{ item.name }}

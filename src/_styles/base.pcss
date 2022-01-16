@@ -4,8 +4,14 @@ html {
   @apply antialiased text-gray-800 font-sans;
 }
 
-#open-hours > table > tr td {
-  @apply pt-2 pr-4;
+@media screen and (min-width: 400px) {
+  #open-hours > table > tr td {
+    @apply pt-2 pr-4;
+  }
+}
+
+#open-hours > table {
+  @apply w-full;
 }
 
 /* This allows you to hide Alpine DOM until it's ready to go. */
