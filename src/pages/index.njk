@@ -5,8 +5,52 @@ layout: layouts/layout.njk
 permalink: /
 ---
 
-<section
-  class="bg-[url('../public/podiatry-banner.jpg')] h-64 min-h-75% w-full bg-no-repeat bg-cover bg-top grid place-items-center text-white"
->
-    <h1 class="text-4xl">Welcome to Preston Podiatry</h1>
+<section class="h-screen">
+  <div
+    class="absolute inset-0 z-negative bg-fixed bg-no-repeat bg-cover bg-bottom bg-[url('../public/home-banner.jpg')]"
+  ></div>
+  <div
+    class="absolute flex flex-col items-start justify-center h-full text-white max-w-screen-xl px-8 md:px-16 lg:px-32"
+  >
+    <h1 class="text-4xl font-bold mb-4">Welcome to Preston Podiatry</h1>
+    <h2 class="text-xl font-medium mb-2">
+      Full Range Of Chiropodist And Podiatrist Services Offered
+    </h2>
+    <a href="/contact">
+      <button
+        type="button"
+        class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-8 py-2.5 text-center mr-2 my-2 w-fit"
+      >
+        Contact
+      </button>
+    </a>
+  </div>
+</section>
+
+<section class="flex flex-col px-4 md:flex-row max-w-screen-lg mx-auto my-4">
+  <div class="mr-4">
+    <h2 class="text-2xl font-bold mb-2">What We Do</h2>
+    <p class="max-w-lg">
+      Preston Podiatry offers treatment, diagnosis and advice for the whole
+      range of foot and lower limb related problems. We offer routine foot care
+      services like the treatment of callus, ingrown toenails, vascular and
+      neurological assessments.
+    </p>
+  </div>
+  <img src="../public/podiatry3.jpg" class="w-1/2 rounded-sm" />
+</section>
+
+<section class="flex flex-col px-4 md:flex-row max-w-screen-lg mx-auto my-4">
+  <div class="mr-4">
+    <h2 class="text-2xl font-bold mb-2">
+      Biomechanical Assessment, Orthotics And Insoles
+    </h2>
+    <p class="max-w-lg">
+      We are also equipped to offer a full biomechanical assessment including
+      gait analysis. This enables us to accurately prescribe orthotics and
+      insoles which can help alleviate a vast number of conditions like flat
+      feet, high arches and foot and ankle pain.
+    </p>
+  </div>
+  <img src="../public/podiatry4.jpg" class="w-1/2 rounded-sm" />
 </section>

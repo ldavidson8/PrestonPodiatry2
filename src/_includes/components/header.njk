@@ -1,10 +1,10 @@
-<nav class="bg-primary py-4 relative z-50 text-white" x-data>
+<nav class="bg-primary border-b-2 border-white border-opacity-90 shadow-lg p-4 relative z-50 text-white" x-data>
   <div class="max-w-screen-xl mx-auto flex justify-between">
     <a class="font-bold text-xl" href="/">
       Preston Podiatry
     </a>
     {# Desktop Nav #}
-    <div class="hidden md:flex items-center gap-8">
+    <div class="hidden md:flex items-center gap-8 text-lg">
       {% for item in navigation %}
         <a
           class="{{ 'font-semibold underline' if page.url == item.route }}"
@@ -25,13 +25,18 @@
   </div>
   {# Mobile Navigation #}
   <nav
-    class="container mt-8 flex flex-col gap-3 md:hidden"
+    class="container mt-6 flex flex-col text-lg gap-3 md:hidden"
     x-cloak
     x-show="$store.nav.isOpen"
-  >
+    x-transition:enter="transition ease-out duration-300"
+							x-transition:enter-start="opacity-0 transform scale-90"
+							x-transition:enter-end="opacity-100 transform scale-100"
+							x-transition:leave="transition ease-in duration-300"
+							x-transition:leave-start="opacity-100 transform scale-100"
+							x-transition:leave-end="opacity-0 transform scale-90">
     {% for item in navigation %}
       <a
-        class="{{ 'font-semibold underline' if page.url == item.route }}"
+        class="{{ 'font-semibold underline bg-green-700' if page.url == item.route }} p-2 rounded-lg"
         href="{{ item.route }}"
       >
         {{ item.name }}

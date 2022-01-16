@@ -19,15 +19,12 @@
       <h2 class="text-lg font-medium tracking-wider">Links</h2>
       <ul class="flex flex-col">
         {% for item in navigation %}
-          <li class="inline">
-            <a
-         href="{{ item.route }}"
-         class="uppercase text-sm py-1 rounded inline-block
-         {{'text-primary underline underline-offset-4' if entry.url in page.url
-         else 'text-white hover:text-slate-100'}}">
-              {{ item.name }}
-            </a>
-          </li>
+          <a
+          class="{{ 'font-semibold underline text-primary' if page.url == item.route }}"
+          href="{{ item.route }}"
+        >
+            {{ item.name }}
+          </a>
         {% endfor %}
       </div>
       <div>
