@@ -1,10 +1,10 @@
 <nav class="bg-primary border-b-2 border-white border-opacity-90 shadow-lg p-4 relative z-50 text-white" x-data>
   <div class="max-w-screen-xl mx-auto flex justify-between">
-    <a class="font-bold text-xl" href="/">
+    <a class="font-bold text-2xl" href="/">
       Preston Podiatry
     </a>
     {# Desktop Nav #}
-    <div class="hidden md:flex items-center gap-8 text-lg">
+    <div class="hidden md:flex items-center gap-16 text-lg">
       {% for item in navigation %}
         <a
           class="{{ 'font-semibold underline' if page.url == item.route }}"
