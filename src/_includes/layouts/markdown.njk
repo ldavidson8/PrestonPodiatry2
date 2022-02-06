@@ -1,7 +1,7 @@
-{% extends 'layouts/layout.njk' %}
+---
+layout: layouts/layout.njk
 
-{% block body %}
-  <div class="container prose py-16">
-    {{ content | safe }}
-  </div>
-{% endblock %}
+---
+<div class="max-w-screen-lg mx-auto prose my-8 p-8">
+  {{ content | safe }}
+</div>

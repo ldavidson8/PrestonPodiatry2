@@ -1,0 +1,4 @@
+{
+  "tags": "problems",
+  "permalink": "/problems/{{ title | slug }}/"
+}

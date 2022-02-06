@@ -1,0 +1,21 @@
+---
+title: Bespoke Orthotics | Biomechanics
+description: 'Preston Podiatry offers treatment, diagnosis and advice for the whole range of foot and lower limb related problems.'
+layout: layouts/layout.njk
+permalink: /foot-problems/
+eleventyExcludeFromCollections: true
+---
+<div class="max-w-screen-lg mx-auto my-12 p-8">
+
+    <h1 class="font-bold text-2xl mb-4">A-Z of Common Foot Problems</h1>
+    <ul>
+
+        {% for post in collections.problems %}
+            <li class="py-2">
+                <a class="hover:text-primary hover:font-semibold py-2" href="{{ post.url }}">{{post.data.title}}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <p class="mt-4 text-lg">If you're having any of these issues, get in contact with us through our <a class="hover:text-primary font-semibold" href="/contact"> online form </a> or call us on <a class="hover:text-primary font-semibold" href="+441772930720">01772 930720</a>
+    </p>
+</div>
